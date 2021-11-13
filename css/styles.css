@@ -140,10 +140,15 @@ img {
 }
 
 /* ---------hero-------------- */
-.section {
-  padding-top: 47px;
+.benefits {
+  padding-top: 94px;
   padding-bottom: 47px;
 }
+.products {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
 .hero {
   background-color: var(--hero-bg-color);
   padding-top: 200px;
@@ -185,7 +190,9 @@ img {
 .benefits-list {
   display: flex;
 }
+
 .benefits-item-title {
+  width: 270px;
   margin-bottom: 10px;
 
   font-weight: bold;
@@ -195,6 +202,7 @@ img {
   text-transform: uppercase;
   color: var(--second-title-color);
 }
+}
 .benefits-text {
   width: 270px;
   font-weight: normal;
@@ -203,7 +211,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--first-text-color);
 }
-
+.benefits-item + .benefits-item {
+  margin-left: 30px;
+}
 /* -----products------ */
 
 .products-title {
@@ -226,6 +236,8 @@ img {
 /*----------team-------------*/
 .team {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team-list {
   display: flex;
@@ -297,8 +309,10 @@ img {
   margin-top: 20px;
   font-style: normal;
 }
-.address-link {
+.address-item {
   margin-bottom: 9px;
+}
+.address-link {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -306,7 +320,6 @@ img {
   color: var(--main-title-color);
 }
 .address-mail-link {
-  margin-bottom: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -328,6 +341,10 @@ img {
 }
 
 /* ---------------- portfolio-----------------------*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-list {
   display: flex;
   justify-content: center;
@@ -382,7 +399,7 @@ img {
 }
 .projects-item {
   margin-bottom: 30px;
-  /width: calc((100%-60px) / 3);
+  width: 370px;
   box-sizing: border-box;
 }
 .projects-item:nth-last-child(-n + 3) {
